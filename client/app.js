@@ -6,7 +6,7 @@ var Router = require('./router')
 var Store = require('./store')
 var State = require('./state')
 var LayoutView = require('components/layout')
-var Alerts = require('components/alerts');
+var Alerts = require('components/alerts')
 
 require('jquery')
 require('bootstrap/dist/js/bootstrap.js')
