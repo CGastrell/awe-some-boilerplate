@@ -1,0 +1,43 @@
+body {
+  padding-top: 50px;
+}
+
+/* navbar related */
+.navbar {
+  /* drop down menues will fail with this, it is here only as an emergency
+  fix for the navbar-brand logo not to invade container*/
+  overflow: hidden;
+}
+.profileMenuItem a.toggle {float:right; color:#ff7300;font-size:16px}
+.profileMenuItem a.toggle span {text-overflow: ellipsis; overflow: hidden;white-space:nowrap;max-width:100px;float:right}
+.profileMenuItem a {padding-right:64px!important}
+.profileMenuItem img {position:absolute;top:-4px;right:0;width:45px; height:45px; border-radius:100%}
+li.profileMenuItem {padding-top: 7px;padding-bottom: 8px;}
+
+
+
+/* footer */
+footer {text-align:center;color:#b3b3b3;background:#000;padding:20px 0;}
+footer p{margin:0}
+footer a{color: #b3b3b3}
+footer .social-link {background:#fff;width:24px;height:24px;text-align:center;border-radius:24px;margin-left:4px;display:inline-block;color:#000;line-height:25px}
+footer a:hover{color: #ff7300}
+.footer-link{color: #b3b3b3}
+.footer-link:hover{color: #ff7300}
+a.social-link:{font-size:2em};
+a.social-link:focus {color:#b3b3b3;}
+
+/* custom btn buttons */
+.btn-google { color:#fff; background-color:#DB4437;}
+.btn-google:hover { color:#fff; background-color:#aa3336;}
+.btn-facebook { color:#fff; background-color:#3B5B97; }
+.btn-facebook:hover { color:#fff; background-color:#2B3B87; }
+.btn-twitter { color:#fff; background-color:#2CABE1; }
+.btn-twitter:hover { color:#fff; background-color:#1C8Bd1; }
+
+/* piled up buttons */
+.button-row {
+  padding: 2px;
+}
+
+/**/

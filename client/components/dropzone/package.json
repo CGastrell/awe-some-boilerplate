@@ -1,0 +1,29 @@
+{
+  "name": "ampersand-component-dropzone",
+  "version": "0.2.1",
+  "description": "ampersand dropzone component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interactar/ampersand-dropzone.git"
+  },
+  "keywords": [
+    "ampersand",
+    "dropzone",
+    "component"
+  ],
+  "author": "Facugon <facugon@interactar.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/interactar/ampersand-dropzone/issues"
+  },
+  "homepage": "https://github.com/interactar/ampersand-dropzone#readme",
+  "dependencies": {
+    "ampersand-view": "10.0.1",
+    "debug": "2.2.0",
+    "dropzone": "4.3.0"
+  }
+}
