@@ -22,14 +22,14 @@ module.exports = {
     //   path.resolve('./client'),
     // ],
     alias: {
-      'jquery-ui': 'jquery-ui/jquery-ui.js'
+      // 'jquery-ui': 'jquery-ui/jquery-ui.js'
       // 'jquery-ui-css': 'jquery-ui/../../themes/base'
     },
     modulesDirectories: [
       'node_modules',
-      'client',
-      'public',
-      'node_modules/jquery-ui/themes/base'
+      'client'
+      // 'public',
+      // 'node_modules/jquery-ui/themes/base'
     ]
   },
   plugins: [
@@ -38,7 +38,7 @@ module.exports = {
       'jQuery': 'jquery',
       'window.jQuery': 'jquery'
     }),
-    new ExtractTextPlugin('css/[name]---[local]---[hash:base64:5].css'),
+    new ExtractTextPlugin('css/[name]-[local]-[hash:6].css'),
     new HtmlWebpackPlugin({
       template: 'client/index.tpl.html',
       inject: 'body',
@@ -63,11 +63,11 @@ module.exports = {
       { test: /\.json?$/, loader: 'json' },
       {
         test: /\.(otf|eot|svg|ttf|woff)/,
-        loader: 'url-loader?limit=8192'
+        loader: 'url-loader?limit=8192&name=fonts/[name]-[hash:6].[ext]'
       },
       {
         test: /\.(png|jpg|gif)$/,
-        loader: 'url-loader?limit=5000&name=img/img-[hash:6].[ext]'
+        loader: 'url-loader?limit=5000&name=images/[name]-[hash:6].[ext]'
       },
       {
         test: /\.css$/,

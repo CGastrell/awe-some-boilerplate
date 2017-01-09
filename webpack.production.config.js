@@ -26,9 +26,9 @@ module.exports = {
     },
     modulesDirectories: [
       'node_modules',
-      'client',
-      'public',
-      'node_modules/jquery-ui/themes/base'
+      'client'
+      // 'public',
+      // 'node_modules/jquery-ui/themes/base'
     ]
   },
   plugins: [

@@ -3,8 +3,6 @@ var config = require('clientconfig')
 var XHR = require('libs/xhr')
 var debug = require('debug')('app:action:basic-auth')
 
-console.log(config)
-
 module.exports = {
   base64Encode: function (unencoded) {
     return new Buffer(unencoded || '').toString('base64')
