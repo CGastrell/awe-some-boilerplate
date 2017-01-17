@@ -1,12 +1,12 @@
 var app = require('ampersand-app')
 var View = require('ampersand-view')
-var template_hbs = require('./template.hbs')
+var templateHbs = require('./template.hbs')
 
 module.exports = View.extend({
   initialize: function () {
     this.model = app.store.session.profile
   },
-  template: template_hbs,
+  template: templateHbs,
   bindings: {
     'model.fullname': {
       type: 'text',

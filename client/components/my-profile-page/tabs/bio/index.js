@@ -34,7 +34,7 @@ module.exports = View.extend({
       onClick: function () {
         var data = fieldset.data
         var date = new Date(data.date_birth_formatted)
-        if (date != 'Invalid Date') {
+        if (date !== 'Invalid Date') {
           data.date_birth = date.toISOString()
         }
         ProfileActions.updateProfile(data)
@@ -53,9 +53,9 @@ module.exports = View.extend({
 
 var SelectCustomView = SelectView.extend({
   template: [
-    '<div class="select">',
+    '<div>',
     '<label data-hook="label"></label>',
-    '<select></select>',
+    '<select class="form-control"></select>',
     '<span data-hook="message-container" class="message message-below message-error">',
     '<p data-hook="message-text"></p>',
     '</span>',
@@ -146,6 +146,15 @@ var FieldsetView = FormView.extend({
         styles: 'col-xs-12'
       }),
       new InputView({
+        template: `
+          <div class="">
+            <label data-hook="label"></label>
+            <textarea class="form-input form-control"></textarea>
+            <div data-hook="message-container"
+              class="message message-below message-error">
+              <p data-hook="message-text"></p>
+            </div>
+          </div>`,
         label: 'BIOGRAPHY',
         type: 'textarea',
         required: false,

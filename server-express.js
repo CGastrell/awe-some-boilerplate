@@ -47,8 +47,7 @@ if (isDeveloping) {
   app.use(webpackHotMiddleware(compiler))
   app.use(express.static(path.join(__dirname, 'public')))
   app.get('*', function response (req, res) {
-    res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'public/index.html')))
-    res.end()
+    res.redirect('/index.html')
   })
 } else {
   app.use(express.static(path.join(__dirname, 'public')))

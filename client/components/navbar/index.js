@@ -1,7 +1,5 @@
-var View = require('ampersand-view')
-var templateHbs = require('./navbar.hbs')
-const $ = window.jQuery = require('jquery')
-require('bootstrap')
+const View = require('ampersand-view')
+const templateHbs = require('./navbar.hbs')
 
 var AuthView = require('./auth')
 
@@ -16,15 +14,15 @@ module.exports = View.extend({
   render: function () {
     this.renderWithTemplate(this)
 
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop()
-      if (scroll >= 100) {
-        $('.navbar-default').addClass('sticky')
-        $('.navbar-default').removeClass('topScroll')
-      } else {
-        $('.navbar-default').removeClass('sticky')
-        $('.navbar-default').addClass('topScroll')
-      }
-    })
+    // $(window).scroll(function () {
+    //   var scroll = $(window).scrollTop()
+    //   if (scroll >= 100) {
+    //     $('.navbar-default').addClass('sticky')
+    //     $('.navbar-default').removeClass('topScroll')
+    //   } else {
+    //     $('.navbar-default').removeClass('sticky')
+    //     $('.navbar-default').addClass('topScroll')
+    //   }
+    // })
   }
 })

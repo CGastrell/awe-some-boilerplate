@@ -1,17 +1,17 @@
+require('jquery')
+require('bootstrap')
+require('app/block-ui')
+require('./stylesheets')
+
 var app = require('ampersand-app')
-var _ = require('lodash')
+// var _ = require('lodash')
 var config = require('clientconfig')
-var domReady = require('domready')
+// var domReady = require('domready')
 var Router = require('./router')
 var Store = require('./store')
 var State = require('./state')
 var LayoutView = require('components/layout')
 var Alerts = require('components/alerts')
-
-require('jquery')
-require('bootstrap/dist/js/bootstrap.js')
-require('./stylesheets')
-require('app/block-ui')
 
 window.__LOAD_FB_SDK = config.fb
 
@@ -55,4 +55,5 @@ app.extend({
   }
 })
 
-domReady(_.bind(app.init, app))
+app.init()
+// domReady(_.bind(app.init, app))

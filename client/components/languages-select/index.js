@@ -5,7 +5,7 @@ module.exports = SelectView.extend({
   template: [
     '<div class="select">',
     '<label data-hook="label"></label>',
-    '<select></select>',
+    '<select class="form-control"></select>',
     '<span data-hook="message-container" class="message message-below message-error">',
     '<p data-hook="message-text"></p>',
     '</span>',

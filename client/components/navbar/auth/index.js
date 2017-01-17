@@ -24,7 +24,7 @@ module.exports = View.extend({
   initialize: function () {
     this.model = app.store.session
   },
-  template: '<div data-hook="container" class="navbar-form navbar-right auth-component"></div>',
+  template: '<ul class="nav navbar-nav navbar-right" data-hook="container"> </ul>',
   render: function () {
     this.renderWithTemplate(this)
 

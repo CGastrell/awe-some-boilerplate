@@ -20,8 +20,8 @@ module.exports = {
     //   path.resolve('./client'),
     // ],
     alias: {
-      'jquery': 'jquery/src/jquery',
-      'jquery-ui': 'jquery-ui/jquery-ui.js'
+      // 'jquery': 'jquery/src/jquery',
+      // 'jquery-ui': 'jquery-ui/jquery-ui.js'
       // 'jquery-ui-css': 'jquery-ui/../../themes/base'
     },
     modulesDirectories: [
